@@ -1,0 +1,12 @@
+{
+    "name":"brackets-drpc",
+    "title":"Discord RPC",
+    "description":"Provides a Discord Rich Presence while using Brackets.",
+    "homepage":"https://github.com/benfoster04/brackets-drpc",
+    "version":"1.0.0",
+    "author":"Ben Foster <fosterben150@gmail.com> (http://benfoster.ml)",
+    "license":"MIT",
+    "engines":{
+        "brackets":">=1.8.0"
+    }
+}
