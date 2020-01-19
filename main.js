@@ -2,7 +2,7 @@ define(function (require, exports, module) {
     "use strict";
     var CommandManager = brackets.getModule("command/CommandManager"),
         Menus          = brackets.getModule("command/Menus");
-    function handleHelloWorld() {
+    function reconnect() {
         window.alert("This would reconnect back to Discord.");
     }
     var DISCORD_RECONNECT = "discordrpc.reconnect";
