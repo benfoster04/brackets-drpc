@@ -3,9 +3,9 @@ define(function (require, exports, module) {
     var CommandManager = brackets.getModule("command/CommandManager"),
         Menus          = brackets.getModule("command/Menus");
     function handleHelloWorld() {
-        window.alert("Hello, world!");
+        window.alert("This would reconnect back to Discord.");
     }
-    var DISCORD_RECONNECT = "helloworld.sayhello";   // package-style naming to avoid collisions
+    var DISCORD_RECONNECT = "discordrpc.reconnect";
     CommandManager.register("Reconnect to Discord", DISCORD_RECONNECT, reconnect);
     var menu = Menus.getMenu(Menus.AppMenuBar.FILE_MENU);
     menu.addMenuItem(DISCORD_RECONNECT);
