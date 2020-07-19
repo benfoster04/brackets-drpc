@@ -5,25 +5,22 @@ define(function (require, exports, module) {
         AppInit        = brackets.getModule("utils/AppInit"),
         Docs           = brackets.getModule("document/DocumentManager"),
         EditorManager  = brackets.getModule("editor/EditorManager");
+
+    function getDocString() {
+      let doc = Docs.getCurrentDocument();
+      return (doc) ? doc.file.fullPath.split("/").pop() : "A File";
+    }
     function reconnect() {
-        let doc = Docs.getCurrentDocument();
-        window.alert(doc.file.fullPath.split("/").pop());
+        console.log(getDocString());
     }
     AppInit.appReady(() => {
       var DISCORD_RECONNECT = "discordrpc.reconnect";
       CommandManager.register("Reconnect to Discord", DISCORD_RECONNECT, reconnect);
       var menu = Menus.getMenu(Menus.AppMenuBar.FILE_MENU);
-      menu.addMenuItem(DISCORD_RECONNECT, "Ctrl-Shift-R");
-
-      let doc = Docs.getCurrentDocument();
-      if (doc) {
-        window.alert(doc.file.fullPath.split("/").pop());
-      } else {window.alert("Tumbleweed");}
+      menu.addMenuItem(DISCORD_RECONNECT);
+      console.log(getDocString());
     });
     EditorManager.on("activeEditorChange",() => {
-      let doc = Docs.getCurrentDocument();
-      if (doc) {
-        window.alert(doc.file.fullPath.split("/").pop());
-      } else {window.alert("Tumbleweed 2");}
+      console.log(getDocString());
     });
 });

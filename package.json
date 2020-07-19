@@ -3,7 +3,7 @@
     "title":"Discord RPC",
     "description":"Provides a Discord Rich Presence while using Brackets.",
     "homepage":"https://github.com/benfoster04/brackets-drpc",
-    "version":"1.0.6",
+    "version":"1.0.9",
     "author":"Ben Foster <fosterben150@gmail.com> (https://github.com/benfoster04/brackets-drpc)",
     "license":"MIT",
     "keywords":["Discord","DRPC","RPC","Rich","Presence"],
