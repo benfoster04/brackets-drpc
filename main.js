@@ -4,14 +4,19 @@ define(function (require, exports, module) {
         Menus          = brackets.getModule("command/Menus"),
         AppInit        = brackets.getModule("utils/AppInit"),
         Docs           = brackets.getModule("document/DocumentManager"),
-        EditorManager  = brackets.getModule("editor/EditorManager");
+        EditorManager  = brackets.getModule("editor/EditorManager"),
+        Widgets        = brackets.getModule("widgets/Dialogs"),
+        LiveDevMB      = brackets.getModule("LiveDevelopment/LiveDevMultiBrowser");
 
     function getDocString() {
       let doc = Docs.getCurrentDocument();
       return (doc) ? doc.file.fullPath.split("/").pop() : "A File";
     }
+    function getCurrentFunction() {
+      return (LiveDevMB.isActive()) ? "Live Editing" : "Editing";
+    }
     function reconnect() {
-        console.log(getDocString());
+        // Widgets.showModal("discordrpc.reconnectmodal", "Reconnecting", "We're trying to reconnect you now.");
     }
     AppInit.appReady(() => {
       var DISCORD_RECONNECT = "discordrpc.reconnect";
@@ -21,6 +26,6 @@ define(function (require, exports, module) {
       console.log(getDocString());
     });
     EditorManager.on("activeEditorChange",() => {
-      console.log(getDocString());
+      console.log(getCurrentFunction()+" "+getDocString());
     });
 });
