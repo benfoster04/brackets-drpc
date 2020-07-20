@@ -10,3 +10,5 @@ At this time I don't really have the knowledge nor the availability to be workin
 I sincerely apologise on my behalf that I can't create it myself, however I would like to let other people colaborate with me in making it and it would be an amazing learning experience to everyone, not only in how Brackets extensions are made and how Discord Rich Presence works, but also just being able to work together with people that I have never met before in the creation of something that will be used by quite possibly a lot of people.
 
 If you would like to get in touch with me in helping out with the creation of the extension, then please contact me on Discord: LatencyPain#7893.
+
+Ok quick update, I have a little bit of time but not a whole lot.
