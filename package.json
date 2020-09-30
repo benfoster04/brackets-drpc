@@ -12,5 +12,9 @@
     "repository":{
         "type":"git",
         "url":"https://github.com/benfoster04/brackets-drpc.git"
-    }
+    },
+    "i18n": [
+        "en",
+        "ja"
+    ]
 }

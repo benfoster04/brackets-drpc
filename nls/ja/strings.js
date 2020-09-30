@@ -1,0 +1,5 @@
+// Japanese
+
+define({
+
+});
