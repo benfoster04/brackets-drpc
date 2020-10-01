@@ -1,0 +1,5 @@
+{
+	"paths": {
+		"discord-rpc": "./node_modules/discord-rpc/src/index"
+	}
+}

@@ -30,5 +30,8 @@
     "i18n": [
         "en",
         "ja"
-    ]
+    ],
+    "scripts": {
+        "build": "builder"
+    }
 }

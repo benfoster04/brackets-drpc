@@ -115,3 +115,6 @@ dist
 
 # System file (created by Windows)
 desktop.ini
+
+# Deploy ZIP
+deploy.zip
